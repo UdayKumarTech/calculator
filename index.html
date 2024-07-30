@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendToDisplay('Math.PI',name)" name="π">π</button>
+            <button onclick="appendToDisplay('%',name)" name="%">%</button>
+            <button onclick="appendToDisplay('Math.sqrt(',name)" name="√(">√</button>
+            <button onclick="appendToDisplay('**',name)" name="^">^</button>
+            <button onclick="appendToDisplay('Math.log10(',name)" name="log(">log</button>
+            <button onclick="appendToDisplay('/',name)" name="/">/</button>
+            <button onclick="appendToDisplay('7',name)" name="7">7</button>
+            <button onclick="appendToDisplay('8',name)" name="8">8</button>
+            <button onclick="appendToDisplay('9',name)" name="9">9</button>
+            <button onclick="appendToDisplay('*',name)" name="*">*</button>
+            <button onclick="appendToDisplay('4',name)" name="4">4</button>
+            <button onclick="appendToDisplay('5',name)" name="5">5</button>
+            <button onclick="appendToDisplay('6',name)" name="6">6</button>
+            <button onclick="appendToDisplay('-',name)" name="-">-</button>
+            <button onclick="appendToDisplay('1',name)" name="1">1</button>
+            <button onclick="appendToDisplay('2',name)" name="2">2</button>
+            <button onclick="appendToDisplay('3',name)" name="3">3</button>
+            <button onclick="appendToDisplay('+',name)" name="+">+</button>
+            <button onclick="appendToDisplay('0',name)" name="0">0</button>
+            <button onclick="appendToDisplay('Math.sin(',name)" name="sin(">sin</button>
+            <button onclick="appendToDisplay('Math.cos(',name)" name="cos(">cos</button>
+            <button onclick="appendToDisplay('.',name)" name=".">.</button>
+            <button onclick="appendToDisplay('Math.tan(',name)" name="tan(">tan</button>
+            <button onclick="appendToDisplay('(',name)" name="(">(</button>
+            <button onclick="appendToDisplay(')',name)" name=")">)</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
